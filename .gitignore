@@ -1,0 +1,42 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+bower_components
+dist
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Generated CSS files
+src/**/*.css
+src/**/*.css.map
+App.css
+app.css
+src/config/client-logo.svg
+src/config/ui-config.ts
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+#Terraform
+.terraform
+terraform.tfstate.backup
+
+# OS and IDE
+.idea
+.tmp
+
+# IDE
+.vscode
