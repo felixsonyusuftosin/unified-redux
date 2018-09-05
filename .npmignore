@@ -9,7 +9,6 @@ dist
 /coverage
 
 # production
-/lib
 
 # misc
 .DS_Store
