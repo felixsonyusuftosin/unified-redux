@@ -35,10 +35,7 @@ export const updateReducersObject = (actionDictionary: IkeyValuePair) => {
     return mergedReducers;
 };
 
-const allReducers: any = (actionDictionary: IkeyValuePair) => combineReducers({
-    ...updateReducersObject(actionDictionary),
-});
-
+const allReducers: any = (actionDictionary: IkeyValuePair) => combineReducers(updateReducersObject(actionDictionary));
 const middlewares = [thunk, promise] as any[];
 middlewares.push(logger);
 
