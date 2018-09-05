@@ -37,6 +37,8 @@ terraform.tfstate.backup
 # OS and IDE
 .idea
 .tmp
+**node_modules
+node_modules
 
 # IDE
 .vscode
