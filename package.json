@@ -6,9 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "type-check": "tsc --noEmit",
-    "build": "npm run build-types && npm run build-js",
+    "build": "npm run clean && tsc && tsc -m es6 --outDir lib-esm && webpack",
+    "clean": "rm -rf _bundles lib lib-esm",
     "build-types": "tsc --emitDeclarationOnly",
-    "build-js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline"
+    "build-js": "babel src --out-dir lib --extensions \".ts\" --source-maps inline"
   },
   "repository": {
     "type": "git",
@@ -24,25 +25,21 @@
   "author": "Felixson Yusuf Tosin <felixsonyusuftosin@gmail.com> (https://www.linkedin.com/in/felixsonyusuftosin/)",
   "license": "ISC",
   "devDependencies": {
-    "@babel/cli": "^7.0.0",
-    "@babel/core": "^7.0.0",
-    "@babel/plugin-proposal-class-properties": "^7.0.0",
-    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
-    "@babel/preset-typescript": "^7.0.0",
     "@types/humps": "^1.1.2",
-    "@types/redux": "^3.6.0",
     "@types/redux-logger": "^3.0.6",
     "@types/redux-promise": "^0.5.28",
-    "@types/redux-thunk": "^2.1.0",
+    "awesome-typescript-loader": "^5.2.0",
     "humps": "^2.0.1",
     "redux": "^4.0.0",
     "redux-logger": "^3.0.6",
     "redux-promise": "^0.6.0",
     "redux-thunk": "^2.3.0",
+    "source-map-loader": "^0.2.4",
     "typescript": "^3.0.1"
   },
   "dependencies": {
+    "@types/redux": "^3.6.0",
+    "@types/redux-thunk": "^2.1.0",
     "react-redux": "^5.0.7"
   }
 }

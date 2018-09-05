@@ -12,7 +12,7 @@ import { Dispatch } from "redux";
 /**
  * Local Imports
  */
-import { IkeyValuePair } from "../../types";
+import { IkeyValuePair } from "../../types/index";
 import { actionDictionary } from "../actions-types/action-config";
 
 /**

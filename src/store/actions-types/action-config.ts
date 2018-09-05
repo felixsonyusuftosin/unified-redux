@@ -12,7 +12,7 @@
 /**
  * Local imports
  */
-import { IkeyValuePair } from "../../types";
+import { IkeyValuePair } from "../../types/index";
 import { Log } from "../../utils/logger";
 
 /* ****************************************
