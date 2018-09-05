@@ -4,7 +4,7 @@
 /**
  * Local imports
  */
-import { IkeyValuePair } from "../../types";
+import { IkeyValuePair } from "../../types/index";
 import { IdispatchParam } from "../actions/actionConfig";
 export interface IactionType<T> extends IdispatchParam<T> {
     payload: T;

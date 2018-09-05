@@ -10,7 +10,7 @@
 /**
  * Local imports
  */
-import { IkeyValuePair } from "../../types";
+import { IkeyValuePair } from "../../types/index";
 /**
  * @interface defination for actions
  * all actions will have three possible sub fields

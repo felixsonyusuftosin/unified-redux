@@ -1,7 +1,7 @@
 /**
  * @file file that defines entry point into the module
  */
-import { IactionDictionary, IeventAction } from "./src/types/index";
+import { IactionDictionary, IeventAction } from "./types/index";
 /**
  * third party imports
  */
