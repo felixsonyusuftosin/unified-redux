@@ -1,8 +1,9 @@
 {
   "name": "unified-redux",
-  "version": "0.0.5",
+  "version": "0.0.8",
   "description": "Reduce the verbosity in redux, An implementation that allows the of use just one implementation of action, action creators, and reducers in redux to reduce verbosity ",
   "main": "./dist/lib/bundle.js",
+  "types":"./lib/index.d.ts",
   "compileOptions": {
     "moduleResolution": "node"
   },
