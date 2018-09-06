@@ -13,6 +13,8 @@ dist
 /dist
 dist
 **dist
+lib
+**lib
 # misc
 .DS_Store
 .env

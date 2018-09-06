@@ -1,8 +1,8 @@
 {
-  "name": "unified-redux",
-  "version": "0.0.5",
+  "name": "@types/unified-redux",
+  "version": "0.0.1",
   "description": "Reduce the verbosity in redux, An implementation that allows the of use just one implementation of action, action creators, and reducers in redux to reduce verbosity ",
-  "main": "./dist/lib/bundle.js",
+  "main": "./lib/index.d.ts",
   "compileOptions": {
     "moduleResolution": "node"
   },
@@ -12,7 +12,6 @@
     "build": "npm run clean && webpack",
     "migrate-webpack": "npx webpack-cli migrate webpack.config.js",
     "clean": "rm -rf _bundles dist",
-    "publish": "npm run build && npm publish",
     "build-types": "tsc --emitDeclarationOnly",
     "build-js": "babel src --out-dir lib --extensions \".ts\" --source-maps inline"
   },
