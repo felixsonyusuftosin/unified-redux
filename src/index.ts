@@ -43,7 +43,7 @@ interface IconstructorProps {
  * ---------------------------
  * *******************************
  */
-export default class UnifiedStore implements IunifiedStore {
+export default class UnifiedRedux implements IunifiedStore {
     /*
      * *********************
      * Static properties

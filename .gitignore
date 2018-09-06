@@ -10,7 +10,9 @@ dist
 
 # production
 /lib
-
+/dist
+dist
+**dist
 # misc
 .DS_Store
 .env
