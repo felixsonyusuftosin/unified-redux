@@ -1,16 +1,19 @@
 {
   "name": "unified-redux",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Reduce the verbosity in redux, An implementation that allows the of use just one implementation of action, action creators, and reducers in redux to reduce verbosity ",
-  "main": "./lib/index.js",
+  "main": "./dist/lib/bundle.js",
   "compileOptions": {
     "moduleResolution": "node"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "type-check": "tsc --noEmit",
-    "build": "npm run clean && tsc",
-    "clean": "rm -rf _bundles lib",
+    "build": "npm run clean && webpack",
+    "migrate-webpack": "npx webpack-cli migrate webpack.config.js",
+    "push": "git add . &&  git commit -m 'Update packege ' && git push origin readme/file",
+    "clean": "rm -rf _bundles dist",
+    "publish": "npm run build && npm publish",
     "build-types": "tsc --emitDeclarationOnly",
     "build-js": "babel src --out-dir lib --extensions \".ts\" --source-maps inline"
   },
@@ -29,18 +32,23 @@
   "license": "ISC",
   "devDependencies": {
     "@types/humps": "^1.1.2",
+    "@types/react": "^16.4.13",
     "@types/redux": "^3.6.0",
     "@types/redux-logger": "^3.0.6",
     "@types/redux-promise": "^0.5.28",
+    "@webpack-cli/migrate": "^0.1.0",
     "awesome-typescript-loader": "^5.2.0",
     "humps": "^2.0.1",
+    "react": "^16.4.2",
+    "react-redux": "^5.0.7",
     "redux-logger": "^3.0.6",
     "redux-promise": "^0.6.0",
     "redux-thunk": "^2.3.0",
     "source-map-loader": "^0.2.4",
-    "typescript": "^3.0.1"
+    "ts-loader": "^5.0.0",
+    "typescript": "^3.0.3",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0"
   },
-  "dependencies": {
-    "react-redux": "^5.0.7"
-  }
+  "dependencies": {}
 }

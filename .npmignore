@@ -3,11 +3,12 @@
 # dependencies
 /node_modules
 bower_components
-dist
 
 # testing
 /coverage
-
+/src
+**src
+src
 # production
 
 # misc

@@ -2,7 +2,7 @@
 
 ### Description
 
-Reduce the verbosity in React redux. An implementation that allows the of use just one functional implementation of action, action creators, and reducers and takes out the complexity introduced by having to manage these disparate  files.
+Reduce the verbosity in React redux. An implementation that allows the of use just one functional implementation of action, action creators, and reducers and takes out the complexity introduced by having to manage these disparate files.
 
 ### Documentation (Typescript) 
 
