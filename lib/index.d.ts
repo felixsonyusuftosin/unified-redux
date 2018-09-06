@@ -19,7 +19,7 @@ interface IconstructorProps {
 /**
  * Global constants
  */
-export default class UnifiedStore implements IunifiedStore {
+export default class UnifiedRedux implements IunifiedStore {
     actionDictionary: IactionDictionary;
     store: any;
     /**

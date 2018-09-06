@@ -9,6 +9,10 @@ bower_components
 /src
 **src
 src
+**testUsage.ts
+**testUsage.js
+testUsage.ts
+testUsage.js
 # production
 
 # misc

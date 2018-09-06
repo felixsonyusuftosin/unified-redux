@@ -10,7 +10,7 @@ import { Dispatch } from "redux";
 /**
  * Local Imports
  */
-import { IkeyValuePair } from "../../types/index";
+import { IkeyValuePair } from "../../types";
 /**
  * Global constants
  */
