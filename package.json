@@ -11,7 +11,6 @@
     "type-check": "tsc --noEmit",
     "build": "npm run clean && webpack",
     "migrate-webpack": "npx webpack-cli migrate webpack.config.js",
-    "push": "git add . &&  git commit -m 'Update packege ' && git push origin readme/file",
     "clean": "rm -rf _bundles dist",
     "publish": "npm run build && npm publish",
     "build-types": "tsc --emitDeclarationOnly",
