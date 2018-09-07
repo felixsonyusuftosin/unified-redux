@@ -6,9 +6,8 @@ bower_components
 
 # testing
 /coverage
-/src
-**src
-src
+/lib
+**lib
 **testUsage.ts
 **testUsage.js
 testUsage.ts

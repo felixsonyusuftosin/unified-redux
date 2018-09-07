@@ -36,29 +36,15 @@ export const reducerObject = (actionDictionary: IkeyValuePair) => {
             switch (action.type) {
                 case actionDictionary[actionKey].request:
                     {
-                        return {
-                            ...state,
-                            error: false,
-                            pending: true,
-                        };
+                        return Object.assign(state, { error: false, pending: true });
                     }
                 case actionDictionary[actionKey].recieve:
                     {
-                        return {
-                            ...state,
-                            error: false,
-                            payload: action.payload,
-                            pending: false,
-                        };
+                        return Object.assign(state, { error: false, payload: action.payload, pending: false });
                     }
                 case actionDictionary[actionKey].fail:
                     {
-                        return {
-                            ...state,
-                            error: action.payload,
-                            payload: null,
-                            pending: false,
-                        };
+                        return Object.assign(state, { error: action.payload, payload: null, pending: false });
                     }
                 default:
                     return state;
